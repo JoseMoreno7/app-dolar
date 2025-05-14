@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>App del Dólar - Tipo de Cambio</title>
+  <link rel="icon" href="https://emojicdn.elk.sh/💵" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+    body { 
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-green-100 to-green-300 p-4">
+  <!-- Contenido principal -->
+  <main class="flex-grow flex items-center justify-center">
+    <div class="bg-white/90 backdrop-blur-lg p-6 rounded-3xl shadow-xl w-full max-w-md text-center">
+      <h1 class="text-2xl font-bold mb-4 text-green-800 drop-shadow">💵 Tipo de Cambio USD</h1>
+
+      <label for="currencySelect" class="block mb-2 text-sm font-medium text-gray-700">Selecciona una moneda</label>
+      <select id="currencySelect" class="w-full p-3 rounded-xl border border-gray-300 mb-4 text-gray-700 bg-white focus:ring-2 focus:ring-green-500">
+        <option disabled selected>Cargando monedas...</option>
+      </select>
+
+      <button onclick="getExchangeRate()" class="bg-green-600 hover:bg-green-700 text-white px-5 py-2.5 rounded-xl font-medium transition shadow-md hover:shadow-lg w-full">
+        Consultar
+      </button>
+
+      <div id="loader" class="hidden text-green-800 text-sm mt-4 animate-pulse">
+        <svg class="inline w-5 h-5 mr-2 animate-spin" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+        </svg>
+        Cargando tipo de cambio...
+      </div>
+
+      <div id="exchangeInfo" class="hidden mt-6 text-center">
+        <p class="text-xl font-semibold text-gray-700 mb-1">
+          <span id="currencyCode"></span>
+        </p>
+        <p id="rate" class="text-3xl font-bold text-green-600 my-2"></p>
+        <p id="fecha" class="text-sm text-gray-500 mt-2"></p>
+      </div>
+
+      <div id="error" class="hidden mt-4 p-3 bg-red-50 text-red-600 rounded-lg text-sm">
+        ❌ No se pudo obtener el tipo de cambio. Intenta más tarde.
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer fijo abajo -->
+  <footer class="mt-auto py-4 text-center text-gray-600 text-sm w-full">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col items-center">
+        <div class="mb-1">
+          <span>© 2025</span>
+          <a href="https://josemoreno7.github.io/MorenoDevs/" target="_blank" class="font-semibold text-green-700 hover:text-green-800 transition mx-1">
+            MorenoDevs
+          </a>
+          <span>| Todos los derechos reservados</span>
+        </div>
+        <p class="text-gray-500">Aplicación de tipo de cambio con fines educativos</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
