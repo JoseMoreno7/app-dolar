@@ -34,17 +34,17 @@ Una aplicación web que permite consultar el tipo de cambio actual del **dólar 
 El sitio está actualmente en español y adaptado para usuarios de Latinoamérica. En el futuro, se puede integrar detección automática de idioma y traducción dinámica.
 
 ## 🚀 Demo
-[![Demo en Vivo](https://img.shields.io/badge/Ver_Demo-App-Dolar-green)](https://josemoreno7.github.io/app-dolar/)
+![Demo en Vivo](https://josemoreno7.github.io/app-dolar/)
 
 ## 📦 Instalación
 ```bash
 git clone https://github.com/JoseMoreno7/app-dolar.git
 cd app-dolar
-
-# Opcional: Ejecutar con Live Server (VS Code)
-**npm install -g live-server**
-**live-server**
 ```
+- Opcional: Ejecutar con Live Server (VS Code)
+1. **npm install -g live-server**
+2. **live-server**
+
 
 ## 👨‍💻 Autor
 
