@@ -7,7 +7,8 @@ Una aplicación web que permite consultar el tipo de cambio actual del **dólar 
 ## 📸 Vista Previa
 
 ![Preview de la App](/img/app-dolar.jpeg)
-*Aplicación desarrollada por [MorenoDevs](https://josemoreno7.github.io/MorenoDevs/)*
+
+>Aplicación desarrollada por [MorenoDevs](https://josemoreno7.github.io/MorenoDevs/)
 
 ## 🌐 Características
 - Consulta en tiempo real con actualización diaria
@@ -33,22 +34,25 @@ Una aplicación web que permite consultar el tipo de cambio actual del **dólar 
 El sitio está actualmente en español y adaptado para usuarios de Latinoamérica. En el futuro, se puede integrar detección automática de idioma y traducción dinámica.
 
 ## 🚀 Demo
-[![Demo en Vivo](https://img.shields.io/badge/Ver_Demo-MorenoDevs-green)](https://josemoreno7.github.io/app-dolar/)
+[![Demo en Vivo](https://img.shields.io/badge/Ver_Demo-App-Dolar-green)](https://josemoreno7.github.io/app-dolar/)
 
 ## 📦 Instalación
 ```bash
 git clone https://github.com/JoseMoreno7/app-dolar.git
 cd app-dolar
+
 # Opcional: Ejecutar con Live Server (VS Code)
 **npm install -g live-server**
 **live-server**
+```
 
 ## 👨‍💻 Autor
 
 Desarrollado por **José Moreno**  
 🔗 [Portafolio: www.morenodevs.com](https://josemoreno7.github.io/MorenoDevs/)
 
----
+## 🤝 Créditos
+- API: Exchange Rates API - [ExchangeRate-API](https://www.exchangerate-api.com/).
 
 ## 📝 Licencia
 
