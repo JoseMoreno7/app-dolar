@@ -6,7 +6,7 @@ Una aplicación web que permite consultar el tipo de cambio actual del **dólar 
 
 ## 📸 Vista Previa
 
-![Preview de la App](/img/app-dolar.jpeg)
+![Demo Clima](/img/app-dolar.jpeg)
 
 >Aplicación desarrollada por [MorenoDevs](https://josemoreno7.github.io/MorenoDevs/)
 
