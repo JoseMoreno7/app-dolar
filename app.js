@@ -220,7 +220,7 @@ async function getExchangeRate() {
 
     const updateDate = new Date(data.time_last_update_utc);
     const formattedDate = updateDate.toLocaleDateString("es-PE", {
-      timeZone: "UTC", // Clave para evitar el desfase
+      timeZone: "America/Lima", // Clave para evitar el desfase
       weekday: "long",
       year: "numeric",
       month: "long",
@@ -252,3 +252,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }, 500);
 });
+
+// Llamar a la función cada 30 minutos (1800000 milisegundos)
+setInterval(() => {
+  getExchangeRate();
+}, 1800000); // 30 minutos
